@@ -572,7 +572,7 @@ class ObjectSharer(object):
 
         kwargs[OS_SIGNAL] = True
         for client in self.clients.values():
-#            print 'Calling receive sig, uid=%s, signame %s, args %s, kwargs %s' % (uid, signame, args, kwargs)
+#            print('Calling receive sig, uid=%s, signame %s, args %s, kwargs %s' % (uid, signame, args, kwargs))
             client.receive_signal(uid, signame, *args, **kwargs)
         self.receive_signal(uid, signame, *args, **kwargs)
 
